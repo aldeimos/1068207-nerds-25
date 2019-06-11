@@ -14,20 +14,20 @@
     <div class="container">
       <div class="main-header-wrapper">
         <div class="header__logo">
-          <a href="#">
+          <a>
             <img src="img/header-logo.svg" alt="Логотип дизайн-студии «Nerds»" width="160" height="65">
           </a>
         </div>
         <nav class="header__nav">
           <ul class="header__nav-list">
-            <li class="nav-list__item">
+            <li class="nav-list__item active-link">
               <a href="#">Студия</a>
             </li>
             <li class="nav-list__item">
               <a href="#">Клиенты</a>
             </li>
             <li class="nav-list__item">
-              <a href="#">Магазин</a>
+              <a href="catalog.html">Магазин</a>
             </li>
             <li class="nav-list__item">
               <a href="#">Контакты</a>
@@ -162,27 +162,29 @@
             ул. Б. Конюшенная, д. 19/8
           </p>
           <p class="contacts__phone">тел. +7 (812) 275-75-75</p>
-          <button class="button contacts__button" type="button">Напишите нам</button>
+          <a class="button contacts__button" href="writeus.html">Напишите нам</a>
         </div>
       </div>
     </section>
   </main>
   <footer class="footer">
     <div class="container">
-      <ul class="footer__social-list">
-        <li class="social__item">
-          <a class="social__link social__link_vk" href="#">Вк</a>
-        </li>
-        <li class="social-item">
-          <a class="social__link social__link_fb" href="#">Фб</a>
-        </li>
-        <li class="social-item">
-          <a class="social__link social__link_inst" href="#">Инст</a>
-        </li>
-      </ul>
       <div class="footer-wrapper">
-        <p class="footer__slogan">Давайте дружить, это выгодно!</p>
-        <p class="footer__subject">Скидка 10%, для друзей из социальных сетей.</p>
+        <ul class="footer__social-list">
+          <li class="social__item">
+            <a class="social__link social__link_vk" href="#">Ссылка на нашу группу Вконтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link_fb" href="#">Ссылка на нашу группу в Фэйсбук</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link_inst" href="#">Ссылка на наш профиль в Инстаграмме</a>
+          </li>
+        </ul>
+        <div class="footer-slogan">
+          <p class="footer-slogan__title">Давайте дружить, это выгодно!</p>
+          <p class="footer-slogan__subject">Скидка 10%, для друзей из социальных сетей.</p>
+        </div>
       </div>
     </div>
   </footer>
@@ -191,20 +193,25 @@
     <form class="login-form" method="POST" action="https://echo.htmlacademy.ru">
       <p class="form__wrapper">
         <label class="login-form__label" for="name-field">Ваше имя:</label>
-        <input class="login-form__input" type="text" name="name" id="name-field" placeholder="Имя Фамилия">
+        <input class="login-form__input login-form__input_name" type="text" name="name" id="name-field"
+          placeholder="Имя Фамилия">
       </p>
       <p class="form__wrapper">
         <label class="login-form__label" for="email-field">Ваш e-mail:</label>
-        <input class="login-form__input" type="email" name="email" id="email-field" placeholder="email@example.com">
+        <input class="login-form__input login-form__input-email" type="email" name="email" id="email-field"
+          placeholder="email@example.com">
       </p>
       <p class="form__wrapper">
         <label class="login-form__label" for="comment-field">Текст письма:</label>
-        <textarea name="comment" id="comment-field" placeholder="В свободной форме"></textarea>
+        <textarea class="login-form__comment" name="comment" id="comment-field"
+          placeholder="В свободной форме"></textarea>
       </p>
       <button class="button login-form__button" type="submit">Отправить</button>
     </form>
-    <button class="modal-close" type="button">Закрыть</button>
+    <button class="modal__close" type="button">Закрыть</button>
   </section>
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>
