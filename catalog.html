@@ -142,7 +142,7 @@
             <h2 class="catalog-sort__title">Сортировать:</h2>
             <ul class="catalog-sort__nav-list">
               <li class="catalog-sort__nav-item">
-                <a class="catalog-sort__nav-link" href="#">По цене</a>
+                <a class="catalog-sort__nav-link catalog-sort__nav-link_active" href="#">По цене</a>
               </li>
               <li class="catalog-sort__nav-item">
                 <a class="catalog-sort__nav-link" href="#">По типу</a>
@@ -151,10 +151,11 @@
                 <a class="catalog-sort__nav-link" href="#">По названия</a>
               </li>
               <li class="catalog-sort__nav-item">
-                <a class="catalog-sort__nav-link catalog-sort__nav-link_up" href="#">Упорядочить по возрастания</a>
+                <a class="catalog-sort__nav-link catalog-sort__nav-link_active catalog-sort__nav-link_down"
+                  href="#">Упорядочить по возрастания</a>
               </li>
               <li class="catalog-sort__nav-item">
-                <a class="catalog-sort__nav-link catalog-sort__nav-link_down" href="#">Упорядочить по убыванию</a>
+                <a class="catalog-sort__nav-link catalog-sort__nav-link_up" href="#">Упорядочить по убыванию</a>
               </li>
             </ul>
           </div>
@@ -162,7 +163,7 @@
             <li class="catalog-content__item">
               <img src="img/catalog-sedona.jpg" alt="Шаблон сайта «Sedona»" width="360" height="576">
               <div class="hover-wrapper">
-                <h3 class="catalog-content__item-title">Sedona</h3>
+                <a href="#" class="catalog-content__item-title">Sedona</a>
                 <p class="catalog-content__item-desc">Информационный сайт для туристов</p>
                 <button class="button catalog-content__item-button" type="button">9 900 руб.</button>
               </div>
@@ -170,7 +171,7 @@
             <li class="catalog-content__item">
               <img src="img/catalog-pink.jpg" alt="Шаблон сайта «Pink»" width="360" height="576">
               <div class="hover-wrapper">
-                <h3 class="catalog-content__item-title">Pink App</h3>
+                <a href="#" class="catalog-content__item-title">Pink App</a>
                 <p class="catalog-content__item-desc">Продуктовый лендинг приложения для iOS и Android</p>
                 <button class="button catalog-content__item-button" type="button">9 900 руб.</button>
               </div>
@@ -178,7 +179,7 @@
             <li class="catalog-content__item">
               <img src="img/catalog-barbershop.jpg" alt="Шаблон сайта «Barbershop Borodinsky»" width="360" height="576">
               <div class="hover-wrapper">
-                <h3 class="catalog-content__item-title">Barbershop</h3>
+                <a href="#" class="catalog-content__item-title">Barbershop</a>
                 <p class="catalog-content__item-desc">Сайт салона красоты.<br>
                   Для мужчин, да.
                 </p>
@@ -188,7 +189,7 @@
             <li class="catalog-content__item">
               <img src="img/catalog-mishka.jpg" alt="Шаблон сайта «Mishka»" width="360" height="576">
               <div class="hover-wrapper">
-                <h3 class="catalog-content__item-title">Mishka</h3>
+                <a href="#" class="catalog-content__item-title">Mishka</a>
                 <p class="catalog-content__item-desc">Интернет-магазин вязаных игрушек</p>
                 <button class="button catalog-content__item-button" type="button">9 900 руб.</button>
               </div>
@@ -196,7 +197,7 @@
             <li class="catalog-content__item">
               <img src="img/catalog-aplus.jpg" alt="Шаблон сайта «A Plus»" width="360" height="576">
               <div class="hover-wrapper">
-                <h3 class="catalog-content__item-title">A Plus</h3>
+                <a href="#" class="catalog-content__item-title">A Plus</a>
                 <p class="catalog-content__item-desc">Лендинг курсов повышения квалификации</p>
                 <button class="button catalog-content__item-button" type="button">9 900 руб.</button>
               </div>
@@ -204,10 +205,26 @@
             <li class="catalog-content__item">
               <img src="img/catalog-kvast.jpg" alt="Шаблон сайта «Кваст»" width="360" height="576">
               <div class="hover-wrapper">
-                <h3 class="catalog-content__item-title">Кваст</h3>
+                <a href="#" class="catalog-content__item-title">Кваст</a>
                 <p class="catalog-content__item-desc">Промо-сайт производителя крафтового кваса</p>
                 <button class="button catalog-content__item-button" type="button">9 900 руб.</button>
               </div>
+            </li>
+          </ul>
+          <ul class="pagination-list">
+            <li class="pagination-list__item">
+              <a class="pagination-list__link pagination-list__link_active" href="#"
+                aria-label="Первая страница каталога">1</a>
+            </li>
+            <li class="pagination-list__item">
+              <a class="pagination-list__link" href="#" aria-label="Вторая страница каталога">2</a>
+            </li>
+            <li class="pagination-list__item">
+              <a class="pagination-list__link" href="#" aria-label="Третья страница каталога">3</a>
+            </li>
+            <li class="pagination-list__item">
+              <a class="pagination-list__link pagination-list__link_next" href="#"
+                aria-label="Следующая страница каталога">Следующая</a>
             </li>
           </ul>
         </div>
